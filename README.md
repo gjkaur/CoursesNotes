@@ -23,8 +23,10 @@ Here are the key points from the provided text:
    - **Meta AI**: Open Pre-trained Transformer.
    - **Hugging Face**: Coordinated research effort resulting in the BLOOM model, involving over 1000 researchers.
 
-5. **Availability of LLMs**:
+6. **Availability of LLMs**:
    - Meta AI and Hugging Face have worked to make large language models accessible to researchers outside of big tech companies.
 
-6. **Applications**:
+7. **Applications**:
    - The text implies that LLMs are widely used in various production applications, though specific examples are not detailed in this excerpt.
+  
+## [MLOps Essentials: Model Development and Integration](https://github.com/gjkaur/CoursesNotes/tree/main/MLOps%20Essentials%3A%20Model%20Development%20and%20Integration)
