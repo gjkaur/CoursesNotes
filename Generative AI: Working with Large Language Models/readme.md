@@ -1,5 +1,7 @@
 # Generative AI: Working with Large Language Models
 
+![image](https://github.com/gjkaur/CoursesNotes/assets/36306330/05132f47-3a9d-45a9-bc57-7808db15234b)
+
 
 Here are the key points from the provided text:
 
