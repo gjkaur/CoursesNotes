@@ -46,7 +46,6 @@
   
 # History and Evolution of Transformer-Based Models
 
-#### Key Points:
 ![image](https://github.com/gjkaur/CoursesNotes/assets/36306330/f3b76625-d93f-4454-9439-e5a0fae0f8f1)
 
 1. **Original Transformer Paper (2017)**:
@@ -91,7 +90,7 @@
 
 # Title: **Transfer Learning in Deep Learning: Pretraining and Fine-Tuning**
 
-#### Key Points:
+![image](https://github.com/gjkaur/CoursesNotes/assets/36306330/f831c05e-3c71-4951-8e0b-cd70edff659c)
 
 1. **Definition and Components**:
    - Transfer learning consists of two main steps: pretraining and fine-tuning.
@@ -110,6 +109,8 @@
    - Next Sentence Prediction: Determining if one sentence logically follows another.
 
 5. **Training Specifications for Notable Models**:
+   ![image](https://github.com/gjkaur/CoursesNotes/assets/36306330/cb5f3945-7a11-4fd1-948b-efcbc4109e34)
+
    - **BERT (2018)**:
      - 109 million parameters.
      - Trained for 12 days on TPUs using 16 GB of data and 250 billion tokens.
@@ -123,10 +124,76 @@
      - Trained for approximately 34 days on 10,000 GPUs with 4,500 GB of data and 300 billion tokens.
      - Data sources: Wikipedia, Common Crawl, WebText2, Books1, Books2.
 
-6. **Benefits of Transfer Learning**:
+7. **Benefits of Transfer Learning**:
    - Requires less time and fewer resources to fine-tune compared to pretraining.
    - Does not need massive datasets for fine-tuning specific tasks.
    - Achieves excellent results, similar to early successes in computer vision with ImageNet.
 
-7. **Conclusion**:
+8. **Conclusion**:
    - Transfer learning's pretraining and fine-tuning are powerful techniques in NLP, significantly enhancing model performance and efficiency.
+  
+# Title: **Overview of Transformer Architecture**
+
+![image](https://github.com/gjkaur/CoursesNotes/assets/36306330/b7d8e0de-d989-4670-b04d-53119aa3ee9a)
+
+1. **Transformer Architecture Basics**:
+   - Divided into two main components: encoder and decoder.
+   - Encoders and decoders can be used independently or together depending on the task.
+
+2. **Encoder**:
+   - Processes the input sequence (e.g., an English sentence "I like NLP").
+   - Consists of six encoder layers.
+
+3. **Decoder**:
+   - Generates the output sequence (e.g., a German translation "ich mag NLP").
+   - Also consists of six decoder layers.
+
+4. **Encoder-Decoder Models**:
+   - Suitable for generative tasks like translation and summarization.
+   - Examples: Facebook's BART and Google's T5.
+
+5. **Encoder-Only Models**:
+   - Focused on understanding the input, useful for tasks like sentence classification and named entity recognition.
+   - Examples: BERT, RoBERTa, DistilBERT.
+
+6. **Decoder-Only Models**:
+   - Specialized for generative tasks such as text generation.
+   - Examples: GPT, GPT-2, GPT-3, and subsequent models.
+
+7. **Summary**:
+   - Transformers consist of encoders and decoders.
+   - The choice of components (encoder, decoder, or both) depends on the specific NLP task.
+
+# Title: **Understanding Self-Attention in Transformers**
+
+![image](https://github.com/gjkaur/CoursesNotes/assets/36306330/f85a271d-cf1e-4ce1-867a-5e2ba8b53c0e)
+
+1. **Role of Self-Attention**:
+   - Enables the model to determine contextual relationships between words in a sentence.
+   - Example: In "The monkey ate that banana because it was too hungry," self-attention helps identify that "it" refers to "monkey."
+
+2. **Mechanism of Self-Attention**:
+   - Uses embeddings of all other words in the sentence.
+   - Assigns weights to words based on their relevance to the target word ("it" in the example).
+   - Higher weights indicate stronger relevance.
+
+3. **Query, Key, and Value Vectors**:
+   - Word embeddings are projected into three vector spaces: query, key, and value.
+   - These projections help in calculating attention weights.
+
+4. **Calculating Attention Weights**:
+   - The query and key vectors are used to calculate scores for each word.
+   - The dot product of the query and key vectors determines the similarity.
+   - Similar queries and keys yield higher dot products, indicating higher relevance.
+
+5. **Scaling and Softmax**:
+   - The dot product is scaled by dividing by the square root of the dimension (N) to control its size.
+   - Softmax function converts the scaled scores into probabilities.
+
+6. **Weighted Sum**:
+   - Each value vector is multiplied by its corresponding softmax score.
+   - The weighted value vectors are summed to produce the self-attention output for each word.
+
+7. **Application**:
+   - Self-attention is applied to every word in the sentence.
+   - Allows different weights to be assigned to words, enhancing the model's understanding of context and relationships.
