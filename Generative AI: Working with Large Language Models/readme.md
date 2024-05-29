@@ -471,6 +471,9 @@ The scaling laws underscore the importance of considering model size, dataset si
 
 # Chinchilla
 
+![image](https://github.com/gjkaur/CoursesNotes/assets/36306330/ae71e87b-7035-4d1a-af55-24032739c0e6)
+
+
 The DeepMind team's research on language model development, particularly with the Chinchilla model, challenges the prevailing trend of increasing model size and instead advocates for optimizing model size and training data. Here's a breakdown of their findings:
 
 **1. Hypothesis and Experimentation**:
@@ -526,6 +529,11 @@ BIG-bench, short for Beyond the Imitation Game Benchmark, introduces a set of ov
 In summary, BIG-bench provides a comprehensive evaluation framework for assessing language models' capabilities on challenging tasks beyond traditional benchmarks, shedding light on both the strengths and limitations of current models.
 
 # PaLM
+
+![image](https://github.com/gjkaur/CoursesNotes/assets/36306330/33e1ca11-5957-44b4-8a8c-091254d23b27)
+
+![image](https://github.com/gjkaur/CoursesNotes/assets/36306330/6926ba88-e8a8-447b-9bba-5c5077517e3d)
+
 
 Google's Pathways Language Model (PaLM), released in April 2022, represents a significant advancement in the field of large language models. Here are the key takeaways and features of PaLM:
 
@@ -616,3 +624,48 @@ PaLM is currently the largest and most powerful dense parameter model, achieving
 
 ### Conclusion
 The release of OPT by Meta (Facebook) AI and BLOOM by Hugging Face and the Montreal AI Ethics Institute represents a significant shift towards open science in the field of AI. By making large language models accessible and providing detailed documentation, these initiatives are likely to accelerate innovation, foster collaboration, and promote inclusivity in AI research.
+
+### Recap of Large Language Models and Transformers
+
+#### Key Developments in Large Language Models
+
+1. **Google's GLaM (Generalized Language Model)**
+   - **Innovation**: Utilized sparse mixtures of experts to reduce training and inference costs.
+   - **Impact**: Demonstrated efficiency in handling large-scale language tasks.
+
+2. **Microsoft and Nvidia's Megatron-Turing NLG**
+   - **Parameters**: 530 billion, three times larger than GPT-3.
+   - **Significance**: Pushed the boundaries of model size and computational capacity.
+
+3. **DeepMind's Gopher**
+   - **Parameters**: 280 billion.
+   - **Performance**: Achieved high performance, setting a new benchmark at its release.
+
+4. **DeepMind's Chinchilla**
+   - **Revelation**: Showed that existing large models were undertrained.
+   - **Training Data**: Focused on increasing training tokens rather than model size.
+   - **Outcome**: Demonstrated superior performance with a smaller model trained on more data.
+
+5. **Google's PaLM (Pathways Language Model)**
+   - **Parameters**: 540 billion.
+   - **Infrastructure**: Utilized the Pathways system, enabling efficient use of hardware accelerators.
+   - **Performance**: Currently the best-performing model.
+
+6. **Meta's OPT (Open Pre-trained Transformers)**
+   - **Range**: Models from 125 million to 175 billion parameters.
+   - **Accessibility**: Made the model weights and training code openly available for research.
+
+7. **Hugging Face's BLOOM**
+   - **Parameters**: 176 billion.
+   - **Collaboration**: Developed by a global volunteer team.
+   - **Multilingual**: Supports 46 natural languages and 13 programming languages.
+   - **Openness**: Provides datasets, weights, and checkpoints for public use.
+
+# Looking Forward with Transformers
+
+#### Further Learning and Hands-On Experience
+- **BERT for Text Classification**: For a practical, code-centric approach to understanding and working with transformers, explore training a model to perform text classification using BERT.
+- **LinkedIn Learning Resources**: Additional courses and resources are available for those interested in deepening their knowledge and hands-on skills with transformers and large language models.
+
+### Conclusion
+The landscape of large language models has rapidly evolved, with significant contributions from leading tech companies and collaborative research initiatives. These advancements have not only pushed the boundaries of AI capabilities but also democratized access to cutting-edge models, fostering a broader and more inclusive research community. 
