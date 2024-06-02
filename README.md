@@ -25,3 +25,5 @@ Learning objectives
 - Explore training pipeline functions and identify the best practices for managing a training pipeline.
 - Discuss the benefits of model versioning.
 - Describe what a model registry is and identify model registry contents.
+
+## Fundamentals to Become a Machine Learning Engineer - Learning Path
